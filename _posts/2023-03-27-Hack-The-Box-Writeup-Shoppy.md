@@ -12,7 +12,7 @@ Each monday I'll post a writeup on a new machine that I've recently exploited. C
 
 In order to properly resolve our host, we'll need to map it's IP to a hostname using local DNS. This way, we won't need to type the IP address each time we'd like to communicate with the machine. In order to do this, we'll need to use the command `sudo vi /etc/hosts`, type in our password, and follow the convention within the file (ip address [TAB] domain name) to add it to the file on the next line like so:
 
-![cc5bdb0ba49704347c5af2d82baa69b5.png](:/assets/img/shoppy/_resources/b4341fbc69554f70984c8e4ea01b73f5.png)
+![cc5bdb0ba49704347c5af2d82baa69b5.png](:/assets/img/shoppy/_resources/cc5bdb0ba49704347c5af2d82baa69b5.png)
 *Make sure that your ip matches up with the instance HTB gave you! Don't copy mine!* 
 
 ## Recon
