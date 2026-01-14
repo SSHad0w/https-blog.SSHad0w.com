@@ -1,1 +1,10 @@
+title: SSHad0w Blog
+description: Technical notes, research, and field observations.
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+
+permalink: /:categories/:title/
 
