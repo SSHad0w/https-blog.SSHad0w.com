@@ -154,7 +154,7 @@ Seems to be HTTP based. [I can tell it's HTTP based becuase I notice that the re
 
 Maybe that's why the protocol was dubbed "copycat". It could be a "copycat service" made to look like HTTP. Since it seems to be HTTP, I'll go ahead and visit it in a browser.
 
-![Screenshot of port 9093](/assets/img/shoppy/pix/1d527e2ce8f9412384a4d99916f296e4)
+![Screenshot of port 9093](/assets/img/shoppy/pix/1d527e2ce8f9412384a4d99916f296e4.png)
 
 The browser gives me all of these weird messages. My best guess is that it's written in Go considering it says "Go runtime" at the top of the page.
 
