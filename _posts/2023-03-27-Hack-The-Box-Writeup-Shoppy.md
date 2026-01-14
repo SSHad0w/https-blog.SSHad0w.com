@@ -1,7 +1,7 @@
 ---
 title: Hack The Box writeup: Shoppy
 date: 2023-03-27
-Categories: [CTF, Offensive]
+categories: [CTF, Offensive]
 tags: [HackTheBox, Writeup]
 ---
 
