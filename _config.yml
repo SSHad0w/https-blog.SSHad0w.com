@@ -6,5 +6,5 @@ highlighter: rouge
 plugins:
   - jekyll-feed
 
-permalink: /:categories/:title/
+permalink: /:title/
 
