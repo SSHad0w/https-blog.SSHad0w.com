@@ -1,0 +1,35 @@
+name: Publish packages to blog
+
+on:
+  push:
+    paths:
+      - "packages/**"
+      - ".github/scripts/publish_package.py"
+      - ".github/workflows/publish_packages.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish packages
+        run: |
+          python3 .github/scripts/publish_package.py
+
+      - name: Commit generated posts/assets (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Publish blog package(s)"
+          git push
