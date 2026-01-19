@@ -219,3 +219,21 @@ a:hover {
   border-radius: 14px;
   color: var(--text);
 }
+
+/* ===== Subtle texture ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(800px 500px at 20% 10%, rgba(46, 160, 67, 0.10), transparent 55%),
+    radial-gradient(700px 450px at 80% 0%, rgba(63, 185, 80, 0.06), transparent 60%);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.site-header, main, footer {
+  position: relative;
+  z-index: 1;
+}
