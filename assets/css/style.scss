@@ -391,3 +391,16 @@ body::before {
   border: 1px solid rgba(63, 185, 80, 0.18);
 }
 
+/* ===== When a link is hovered over, it will glow. ===== */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+a:hover {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
