@@ -175,3 +175,47 @@ a:hover {
   border-radius: 9px;
   padding: 2px 6px;
 }
+
+/* ===== Post layout ===== */
+
+.post-title {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+}
+
+.post-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--faint);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.post-desc {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 70ch;
+}
+
+.post-body {
+  max-width: 75ch;
+}
+
+.markdown-body h2, .markdown-body h3 {
+  letter-spacing: -0.01em;
+  margin-top: 34px;
+}
+
+.markdown-body blockquote {
+  margin: 20px 0;
+  padding: 14px 16px;
+  background: rgba(15, 21, 32, 0.85);
+  border-left: 4px solid rgba(63, 185, 80, 0.35);
+  border-radius: 14px;
+  color: var(--text);
+}
