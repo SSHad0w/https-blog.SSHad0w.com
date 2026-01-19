@@ -268,3 +268,27 @@ body::before {
   position: relative;
   z-index: 1;
 }
+
+/* ===== Image sizing policy ===== */
+
+.post-body img,
+.markdown-body img,
+.page-content img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== Images tagged "small" in MD will stay logo sized. eg: ![small](path/to/image.png) ===== */
+
+.post-body img[alt*="small"],
+.markdown-body img[alt*="small"] {
+  width: auto;
+  max-width: 520px;
+  max-height: 360px;
+  object-fit: contain;
+}
+
