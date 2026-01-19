@@ -1,10 +1,14 @@
 title: SSHad0w
 description: Technical notes, research, and ideas.
+
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 plugins:
   - jekyll-feed
 
 permalink: /:title/
-
