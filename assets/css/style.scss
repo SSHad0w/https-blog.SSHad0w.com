@@ -1,34 +1,39 @@
 ---
 ---
 
-/* Baseline blog styles */
+/* Step 1 marker: if you can’t see the changes below, style.css is not loading */
 
-:root {
-  --maxw: 860px;
+/* Make it obvious immediately */
+body {
+  background: #fcfcfd;
 }
 
-.page-content, .markdown-body {
-  max-width: var(--maxw);
+/* Visible container + typography */
+.markdown-body, .page-content {
+  max-width: 860px;
   margin: 0 auto;
   padding: 28px 16px;
-}
-
-.markdown-body {
   font-size: 16px;
   line-height: 1.75;
 }
 
-.markdown-body img {
-  max-width: 100%;
-  height: auto;
+/* Make code blocks obviously styled */
+.markdown-body pre, .page-content pre {
+  padding: 16px;
   border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.08);
-  display: block;
-  margin: 20px 0;
+  overflow-x: auto;
+  border: 1px solid rgba(0,0,0,0.12);
 }
 
-.markdown-body pre {
+/* Make inline code obvious */
+.markdown-body code, .page-content code {
+  border-radius: 8px;
+  padding: 2px 6px;
+  background: rgba(0,0,0,0.06);
+}
+
+/* Make images obviously framed */
+.markdown-body img, .page-content img {
   border-radius: 12px;
-  padding: 16px;
-  overflow-x: auto;
+  border: 1px solid rgba(0,0,0,0.12);
 }
