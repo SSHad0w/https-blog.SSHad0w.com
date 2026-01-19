@@ -114,4 +114,8 @@ body {
   color: rgba(0,0,0,0.9) !important;
 }
 
+.container {
+  width: min(100% - 32px, 860px);
+  margin: 0 auto;
+}
 
