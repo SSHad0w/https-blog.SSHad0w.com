@@ -6,9 +6,7 @@ title: Log Files
 <section class="home">
   <div class="home-head">
     <h1 class="home-title">{{ site.title }}</h1>
-    <p class="home-sub">
-      Always ask better questions
-    </p>
+    <p class="home-sub">Always ask better questions</p>
   </div>
 
   <div class="dossier-list">
@@ -25,42 +23,28 @@ title: Log Files
         </div>
 
         {% if post.cover %}
-  <img
-    class="dossier-cover{% if post.cover_size %} {{ post.cover_size }}{% endif %}"
-    src="{{ post.cover | relative_url }}"
-    alt=""
-  >
-{% endif %}
-
+          <img
+            class="dossier-cover{% if post.cover_size %} {{ post.cover_size }}{% endif %}"
+            src="{{ post.cover | relative_url }}"
+            alt=""
+          >
+        {% endif %}
 
         {% if post.excerpt %}
           <p class="dossier-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
         {% endif %}
 
-{% if post.categories or post.tags %}
-  <div class="dossier-meta">
-    {% if post.categories %}
-      {% for c in post.categories %}
-        {% assign cslug = c | slugify %}
-        <a class="dossier-chip dossier-chip-cat"
-           href="{{ '/categories/' | relative_url }}#{{ cslug }}">
-          {{ c }}
-        </a>
-      {% endfor %}
-    {% endif %}
-
-    {% if post.tags %}
-      {% for t in post.tags %}
-        {% assign tslug = t | slugify %}
-        <a class="dossier-chip dossier-chip-tag"
-           href="{{ '/tags/' | relative_url }}#{{ tslug }}">
-          {{ t }}
-        </a>
-      {% endfor %}
-    {% endif %}
-  </div>
-{% endif %}
-
+        {% if post.categories or post.tags %}
+          <div class="dossier-meta">
+            {% if post.categories %}
+              {% for c in post.categories %}
+                {% assign cslug = c | slugify %}
+                <a class="dossier-chip dossier-chip-cat"
+                   href="{{ '/categories/' | relative_url }}#{{ cslug }}">
+                  {{ c }}
+                </a>
+              {% endfor %}
+            {% endif %}
 
             {% if post.tags %}
               {% for t in post.tags %}
@@ -69,8 +53,7 @@ title: Log Files
                    href="{{ '/tags/' | relative_url }}#{{ tslug }}">
                   {{ t }}
                 </a>
-                {% endfor %}
-
+              {% endfor %}
             {% endif %}
           </div>
         {% endif %}
