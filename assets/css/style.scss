@@ -2,12 +2,26 @@
 ---
 
 :root {
-  --bg: #ffffff;
-  --text: #0b0f14;
-  --muted: #5b6572;
-  --border: rgba(0,0,0,0.10);
+  /* Core palette */
+  --bg: #0b0f14;         /* near-black */
+  --panel: #0f1520;      /* slightly lifted */
+  --text: #e6edf3;       /* off-white */
+  --muted: #9aa4b2;      /* secondary text */
+  --faint: #6b7280;      /* meta text */
+  --border: rgba(230, 237, 243, 0.10);
+
+  /* Accent */
+  --accent: #2ea043;     /* deep hacker green */
+  --accent2: #3fb950;    /* hover glow */
+  --accentDim: rgba(46, 160, 67, 0.18);
+
+  /* Layout */
   --maxw: 860px;
   --radius: 12px;
+}
+
+html {
+  background: var(--bg);
 }
 
 body {
@@ -15,13 +29,33 @@ body {
   color: var(--text);
 }
 
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+a:hover {
+  color: var(--accent2);
+  text-decoration: underline;
+}
+
+/* Selection feels intentional */
+::selection {
+  background: var(--accentDim);
+}
+
+/* Make the whole site feel like a calm terminal window */
 .page-content, .markdown-body {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 28px 16px;
   font-size: 16px;
   line-height: 1.75;
+  color: var(--text);
 }
+
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3 {
   letter-spacing: -0.01em;
