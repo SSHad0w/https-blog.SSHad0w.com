@@ -584,6 +584,35 @@ a:hover {
   box-shadow: 0 0 0 3px rgba(46, 160, 67, 0.10);
 }
 
+/* ===== Series line ===== */
+
+.series-line {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+.series-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.series-link:hover {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+.series-dim {
+  color: var(--faint);
+  font-weight: 800;
+}
+
+
 .dossier-chip:active {
   transform: translateY(0px);
   box-shadow: 0 0 0 2px rgba(46, 160, 67, 0.10);
