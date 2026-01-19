@@ -393,6 +393,18 @@ body::before {
   border: 1px solid rgba(63, 185, 80, 0.18);
 }
 
+.dossier-chip-cat {
+  background: rgba(46, 160, 67, 0.14);
+  border: 1px solid rgba(63, 185, 80, 0.22);
+}
+
+.dossier-chip-tag {
+  background: rgba(15, 21, 32, 0.75);
+  border: 1px solid rgba(230, 237, 243, 0.10);
+  color: var(--muted);
+}
+
+
 /* ===== When a link is hovered over, it will glow. ===== */
 
 a {
