@@ -41,7 +41,8 @@ title: Log Files
           <div class="dossier-meta">
             {% if post.categories %}
               {% for c in post.categories %}
-                <span class="dossier-chip dossier-chip-cat">{{ c }}</span>
+                <a class="dossier-chip dossier-chip-cat" href="{{ '/categories/#' | append: c | slugify | relative_url }}">{{ c }}</a>
+
               {% endfor %}
             {% endif %}
 
