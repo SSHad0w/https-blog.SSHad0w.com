@@ -24,6 +24,13 @@ title: Log Files
           </time>
         </div>
 
+  <div class="dossier-top">
+          {% if post.cover %}
+            <img class="dossier-cover" src="{{ post.cover | relative_url }}" alt="">
+          {% endif %}
+
+          <h2 class="dossier-title">
+
         {% if post.excerpt %}
           <p class="dossier-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
         {% endif %}
