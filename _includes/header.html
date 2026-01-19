@@ -1,9 +1,7 @@
-<header style="border-bottom:1px solid rgba(0,0,0,0.12);padding:14px 0;margin-bottom:20px;">
-  <div style="max-width:860px;margin:0 auto;padding:0 16px;display:flex;justify-content:space-between;align-items:center;">
-    <a href="{{ '/' | relative_url }}" style="text-decoration:none;color:inherit;font-weight:800;">
-      {{ site.title }}
-    </a>
-    <nav style="display:flex;gap:14px;">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="nav">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </nav>
