@@ -28,12 +28,22 @@ title: Log Files
           <p class="dossier-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
         {% endif %}
 
-        <div class="dossier-meta">
-          <span class="dossier-chip">entry</span>
-          {% if post.tags and post.tags.size > 0 %}
-            <span class="dossier-chip">tagged</span>
-          {% endif %}
-        </div>
+{% if post.categories or post.tags %}
+  <div class="dossier-meta">
+    {% if post.categories %}
+      {% for c in post.categories %}
+        <span class="dossier-chip dossier-chip-cat">{{ c }}</span>
+      {% endfor %}
+    {% endif %}
+
+    {% if post.tags %}
+      {% for t in post.tags %}
+        <span class="dossier-chip dossier-chip-tag">{{ t }}</span>
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endif %}
+
       </article>
     {% endfor %}
   </div>
