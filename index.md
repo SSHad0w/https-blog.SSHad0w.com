@@ -24,33 +24,29 @@ title: Log Files
           </time>
         </div>
 
-  <div class="dossier-top">
-          {% if post.cover %}
-            <img class="dossier-cover" src="{{ post.cover | relative_url }}" alt="">
-          {% endif %}
-
-          <h2 class="dossier-title">
+        {% if post.cover %}
+          <img class="dossier-cover" src="{{ post.cover | relative_url }}" alt="">
+        {% endif %}
 
         {% if post.excerpt %}
           <p class="dossier-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
         {% endif %}
 
-{% if post.categories or post.tags %}
-  <div class="dossier-meta">
-    {% if post.categories %}
-      {% for c in post.categories %}
-        <span class="dossier-chip dossier-chip-cat">{{ c }}</span>
-      {% endfor %}
-    {% endif %}
+        {% if post.categories or post.tags %}
+          <div class="dossier-meta">
+            {% if post.categories %}
+              {% for c in post.categories %}
+                <span class="dossier-chip dossier-chip-cat">{{ c }}</span>
+              {% endfor %}
+            {% endif %}
 
-    {% if post.tags %}
-      {% for t in post.tags %}
-        <span class="dossier-chip dossier-chip-tag">{{ t }}</span>
-      {% endfor %}
-    {% endif %}
-  </div>
-{% endif %}
-
+            {% if post.tags %}
+              {% for t in post.tags %}
+                <span class="dossier-chip dossier-chip-tag">{{ t }}</span>
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endif %}
       </article>
     {% endfor %}
   </div>
