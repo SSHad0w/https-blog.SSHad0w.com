@@ -1,38 +1,50 @@
 ---
 ---
 
-/* MARKER: 2026-01-19 FORCE */
-
-body {
-  background: #fcfcfd;
+:root {
+  --bg: #ffffff;
+  --text: #0b0f14;
+  --muted: #5b6572;
+  --border: rgba(0,0,0,0.10);
+  --maxw: 860px;
+  --radius: 12px;
 }
 
-/* Visible container + typography */
-.markdown-body, .page-content {
-  max-width: 860px;
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page-content, .markdown-body {
+  max-width: var(--maxw);
   margin: 0 auto;
   padding: 28px 16px;
   font-size: 16px;
   line-height: 1.75;
 }
 
-/* Make code blocks obviously styled */
-.markdown-body pre, .page-content pre {
-  padding: 16px;
-  border-radius: 12px;
-  overflow-x: auto;
-  border: 1px solid rgba(0,0,0,0.12);
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  letter-spacing: -0.01em;
 }
 
-/* Make inline code obvious */
+.markdown-body img, .page-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+  margin: 20px 0;
+}
+
+.markdown-body pre, .page-content pre {
+  border-radius: var(--radius);
+  padding: 16px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+}
+
 .markdown-body code, .page-content code {
   border-radius: 8px;
   padding: 2px 6px;
   background: rgba(0,0,0,0.06);
-}
-
-/* Make images obviously framed */
-.markdown-body img, .page-content img {
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.12);
 }
