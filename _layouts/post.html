@@ -1,6 +1,11 @@
+---
+layout: default
+---
+
 {% if page.series %}
+  {% assign sslug = page.series | slugify %}
   <div class="series-line">
-    <a class="series-link" href="{{ '/series/#' | append: page.series | slugify | relative_url }}">
+    <a class="series-link" href="{{ '/series/' | relative_url }}#{{ sslug }}">
       Series: {{ page.series }}
     </a>
     {% if page.series_order %}
@@ -9,9 +14,6 @@
   </div>
 {% endif %}
 
----
-layout: default
----
 <article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
@@ -22,11 +24,12 @@ layout: default
       </time>
 
       {% if page.tags %}
-      <span class="post-tags">
-        {% for tag in page.tags %}
-          <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
-        {% endfor %}
-      </span>
+        <span class="post-tags">
+          {% for tag in page.tags %}
+            {% assign tslug = tag | slugify %}
+            <a class="tag" href="{{ '/tags/' | relative_url }}#{{ tslug }}">{{ tag }}</a>
+          {% endfor %}
+        </span>
       {% endif %}
     </div>
 
