@@ -37,20 +37,30 @@ title: Log Files
           <p class="dossier-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
         {% endif %}
 
-        {% if post.categories or post.tags %}
-          <div class="dossier-meta">
-            {% if post.categories %}
-              {% for c in post.categories %}
+{% if post.categories or post.tags %}
+  <div class="dossier-meta">
+    {% if post.categories %}
+      {% for c in post.categories %}
         {% assign cslug = c | slugify %}
-          <a class="dossier-chip dossier-chip-cat"
-             href="{{ '/categories/' | relative_url }}#{{ cslug }}">
-            {{ c }}
-          </a>
-              {% endfor %}
+        <a class="dossier-chip dossier-chip-cat"
+           href="{{ '/categories/' | relative_url }}#{{ cslug }}">
+          {{ c }}
+        </a>
+      {% endfor %}
+    {% endif %}
 
+    {% if post.tags %}
+      {% for t in post.tags %}
+        {% assign tslug = t | slugify %}
+        <a class="dossier-chip dossier-chip-tag"
+           href="{{ '/tags/' | relative_url }}#{{ tslug }}">
+          {{ t }}
+        </a>
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endif %}
 
-              {% endfor %}
-            {% endif %}
 
             {% if post.tags %}
               {% for t in post.tags %}
