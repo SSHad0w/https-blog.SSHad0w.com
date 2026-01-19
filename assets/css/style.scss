@@ -473,6 +473,14 @@ body::before {
   background: rgba(15, 21, 32, 0.55);
 }
 
+/* ===== Dossier cover badge size (super small, logo sized.) ===== */
+
+.dossier-cover.badge {
+  height: 80px;
+  object-fit: contain;
+}
+
+
 
 /* ===== When a link is hovered over, it will glow. ===== */
 
