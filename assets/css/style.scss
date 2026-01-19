@@ -149,12 +149,13 @@ a:hover {
 .markdown-body pre,
 .page-content pre,
 .highlight pre {
-  background: #0b0f14;
-  color: #e8eef6;
-  border: 1px solid rgba(255,255,255,0.10);
-  border-radius: 12px;
+  background: #05070a;
+  color: #d9fbe3;
+  border: 1px solid rgba(63, 185, 80, 0.18);
+  border-radius: 14px;
   padding: 16px;
   overflow-x: auto;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.35) inset;
 }
 
 .markdown-body pre code,
@@ -168,18 +169,9 @@ a:hover {
 
 .markdown-body code,
 .page-content code {
-  background: rgba(0,0,0,0.06);
-  color: #111827;
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-/* If the theme wraps code in .highlight */
-.highlight {
-  border-radius: 12px;
-}
-
-/* Slightly nicer selection inside code blocks */
-.markdown-body pre ::selection,
-.highlight pre ::selection {
-  background: rgba(255,255,255,0.18);
+  background: rgba(46, 160, 67, 0.10);
+  color: #d9fbe3;
+  border: 1px solid rgba(63, 185, 80, 0.18);
+  border-radius: 9px;
+  padding: 2px 6px;
 }
