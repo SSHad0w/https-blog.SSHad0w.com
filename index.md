@@ -41,16 +41,26 @@ title: Log Files
           <div class="dossier-meta">
             {% if post.categories %}
               {% for c in post.categories %}
-                <a class="dossier-chip dossier-chip-cat" href="{{ '/categories/#' | append: c | slugify | relative_url }}">{{ c }}</a>
+        {% assign cslug = c | slugify %}
+          <a class="dossier-chip dossier-chip-cat"
+             href="{{ '/categories/' | relative_url }}#{{ cslug }}">
+            {{ c }}
+          </a>
+              {% endfor %}
+
 
               {% endfor %}
             {% endif %}
 
             {% if post.tags %}
               {% for t in post.tags %}
-                <a class="dossier-chip dossier-chip-tag" href="{{ '/tags/#' | append: t | slugify | relative_url }}">{{ t }}</a>
+                {% assign tslug = t | slugify %}
+                <a class="dossier-chip dossier-chip-tag"
+                   href="{{ '/tags/' | relative_url }}#{{ tslug }}">
+                  {{ t }}
+                </a>
+                {% endfor %}
 
-              {% endfor %}
             {% endif %}
           </div>
         {% endif %}
