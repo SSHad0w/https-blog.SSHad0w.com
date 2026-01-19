@@ -639,20 +639,3 @@ a:hover {
   border: 1px solid rgba(63, 185, 80, 0.18);
   transform: translateY(1px);
 }
-
-.nav-site {
-  position: relative;
-  padding-left: 12px;
-}
-
-.nav-site::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  transform: translateY(-50%);
-  background: rgba(230, 237, 243, 0.18);
-}
