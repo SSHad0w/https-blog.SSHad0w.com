@@ -614,8 +614,45 @@ a:hover {
   font-weight: 800;
 }
 
-
 .dossier-chip:active {
   transform: translateY(0px);
   box-shadow: 0 0 0 2px rgba(46, 160, 67, 0.10);
+}
+
+/* ===== Header logo + site link ===== */
+
+.brand-logo-long {
+  height: 26px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.25));
+}
+
+.brand-sub {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: rgba(217, 251, 227, 0.9);
+  background: rgba(46, 160, 67, 0.12);
+  border: 1px solid rgba(63, 185, 80, 0.18);
+  transform: translateY(1px);
+}
+
+.nav-site {
+  position: relative;
+  padding-left: 12px;
+}
+
+.nav-site::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  background: rgba(230, 237, 243, 0.18);
 }
