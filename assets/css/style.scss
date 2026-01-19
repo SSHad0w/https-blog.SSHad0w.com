@@ -571,3 +571,20 @@ a:hover {
   scroll-margin-top: 84px; /* so anchor jumps don't hide behind sticky header */
 }
 
+/* ===== Main page tag/category Chip polish ===== */
+
+.dossier-chip {
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease, color 120ms ease;
+}
+
+.dossier-chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(63, 185, 80, 0.28);
+  box-shadow: 0 0 0 3px rgba(46, 160, 67, 0.10);
+}
+
+.dossier-chip:active {
+  transform: translateY(0px);
+  box-shadow: 0 0 0 2px rgba(46, 160, 67, 0.10);
+}
