@@ -480,6 +480,15 @@ body::before {
   object-fit: contain;
 }
 
+/* ===== Making sure the cover doesn't need to be there and CSS won't always look for it ===== */
+
+.dossier-cover {
+  display: block;
+}
+
+.dossier-cover:empty {
+  display: none;
+}
 
 
 /* ===== When a link is hovered over, it will glow. ===== */
