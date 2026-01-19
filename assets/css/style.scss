@@ -207,6 +207,33 @@ a:hover {
   padding: 2px 6px;
 }
 
+/* ===== Rouge syntax highlighting ===== */
+
+.highlight {
+  background: #05070a;
+  border: 1px solid rgba(63, 185, 80, 0.18);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 16px;
+}
+
+/* Token colors (minimal + readable) */
+.highlight .c { color: #7a869a; }  /* comments */
+.highlight .k { color: #7aa2f7; }  /* keywords */
+.highlight .o { color: #c0caf5; }  /* operators */
+.highlight .s { color: #9ece6a; }  /* strings */
+.highlight .m { color: #ff9e64; }  /* numbers */
+.highlight .na { color: #73daca; } /* attributes */
+.highlight .nb { color: #7aa2f7; } /* builtins */
+.highlight .nf { color: #bb9af7; } /* functions */
+.highlight .nt { color: #2ea043; } /* tags (HTML-ish) */
+.highlight .n { color: #e6edf3; }  /* names */
+
+
 /* ===== Post layout ===== */
 
 .post-title {
