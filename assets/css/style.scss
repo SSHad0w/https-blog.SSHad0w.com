@@ -292,3 +292,102 @@ body::before {
   object-fit: contain;
 }
 
+/* ===== Home: dossier list ===== */
+/* ===== Home page CSS. To change this structurally, index.md also needs to be edited.===== */
+/* ===== Might shake this up for christmas, defcon or something, idk ===== */
+.home-head {
+  margin: 18px 0 18px;
+}
+
+.home-title {
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+
+.home-sub {
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.dossier-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.dossier {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: rgba(15, 21, 32, 0.55);
+  position: relative;
+  overflow: hidden;
+}
+
+.dossier::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  background: rgba(46, 160, 67, 0.55);
+  border-radius: 999px;
+}
+
+.dossier-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.dossier-title {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.dossier-title a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.dossier-title a:hover {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+.dossier-date {
+  color: var(--faint);
+  font-weight: 750;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.dossier-excerpt {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.dossier-meta {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dossier-chip {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  color: rgba(217, 251, 227, 0.9);
+  background: rgba(46, 160, 67, 0.10);
+  border: 1px solid rgba(63, 185, 80, 0.18);
+}
+
