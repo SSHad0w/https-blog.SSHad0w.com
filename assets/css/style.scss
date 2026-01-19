@@ -504,3 +504,32 @@ a:hover {
   text-decoration: none;
 }
 
+/* ===== Callouts (blockquote variants) ===== */
+
+.markdown-body blockquote {
+  margin: 18px 0;
+  padding: 14px 16px;
+  background: rgba(15, 21, 32, 0.72);
+  border: 1px solid rgba(230, 237, 243, 0.10);
+  border-left: 4px solid rgba(63, 185, 80, 0.28);
+  border-radius: 14px;
+  color: var(--text);
+}
+
+/* Make the first line label pop if you write NOTE:, OPSEC:, etc. */
+.markdown-body blockquote p:first-child {
+  margin-top: 0;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.markdown-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Label color hints by prefix (works because text is visible even if no match) */
+.markdown-body blockquote p:first-child:has(strong) {
+  color: var(--text);
+}
+
+
