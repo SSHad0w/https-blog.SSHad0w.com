@@ -122,17 +122,58 @@ a:hover {
   text-decoration: none !important;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 
 .site-footer {
-  border-top: 1px solid rgba(0,0,0,0.12);
-  margin-top: 48px;
-  padding: 20px 0;
+  margin-top: 56px;
+  border-top: 1px solid var(--border);
+  background: rgba(11, 15, 20, 0.65);
 }
 
-.muted {
-  color: rgba(0,0,0,0.55);
+.footer-inner {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
 }
+
+.footer-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-mark {
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  color: var(--text);
+}
+
+.footer-dim {
+  color: var(--faint);
+  font-weight: 650;
+}
+
+.footer-right a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 650;
+  margin-left: 14px;
+}
+
+.footer-right a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ===== Container ===== */
+
+.container {
+  width: min(100% - 32px, 860px);
+  margin: 0 auto;
+}
+
 
 /* ===== Code block theme ===== */
 
