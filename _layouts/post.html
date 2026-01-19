@@ -1,3 +1,14 @@
+{% if page.series %}
+  <div class="series-line">
+    <a class="series-link" href="{{ '/series/#' | append: page.series | slugify | relative_url }}">
+      Series: {{ page.series }}
+    </a>
+    {% if page.series_order %}
+      <span class="series-dim">• Part {{ page.series_order }}</span>
+    {% endif %}
+  </div>
+{% endif %}
+
 ---
 layout: default
 ---
