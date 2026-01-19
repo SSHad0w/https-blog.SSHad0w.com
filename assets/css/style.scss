@@ -147,9 +147,12 @@ a:hover {
 }
 
 .footer-mark {
-  font-weight: 900;
-  letter-spacing: 0.2px;
-  color: var(--text);
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid rgba(230, 237, 243, 0.10);
+  background: rgba(15, 21, 32, 0.55);
 }
 
 .footer-dim {
