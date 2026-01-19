@@ -1,8 +1,16 @@
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="SSHad0w Blog Home">
+      <img class="brand-logo-long" src="{{ '/assets/img/octoLogoTransparentSquare.png' | relative_url }}" alt="SSHad0w">
+      <span class="brand-sub">blog</span>
+    </a>
+
     <nav class="nav">
-      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/' | relative_url }}">Log Files</a>
+      <a class="nav-site" href="https://sshad0w.com">SSHad0w.com</a>
+      <a href="{{ '/series/' | relative_url }}">Series</a>
+      <a href="{{ '/tags/' | relative_url }}">Tags</a>
+      <a href="{{ '/categories/' | relative_url }}">Categories</a>
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </nav>
   </div>
