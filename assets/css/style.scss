@@ -81,3 +81,37 @@ body {
   color: rgba(0,0,0,0.9);
 }
 
+/* ===== Header (force override) ===== */
+
+.site-header {
+  border-bottom: 1px solid rgba(0,0,0,0.12) !important;
+  background: #fff !important;
+}
+
+.site-header .header-inner {
+  max-width: 860px !important;
+  margin: 0 auto !important;
+  padding: 14px 16px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.site-header .brand {
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.site-header .nav a {
+  text-decoration: none !important;
+  color: rgba(0,0,0,0.65) !important;
+  margin-left: 14px !important;
+  font-weight: 650 !important;
+}
+
+.site-header .nav a:hover {
+  color: rgba(0,0,0,0.9) !important;
+}
+
+
