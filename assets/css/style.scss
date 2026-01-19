@@ -52,38 +52,6 @@ body {
 /* ===== Header ===== */
 
 .site-header {
-  border-bottom: 1px solid rgba(0,0,0,0.12);
-  margin-bottom: 20px;
-}
-
-.header-inner {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 14px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand {
-  font-weight: 800;
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav a {
-  margin-left: 14px;
-  text-decoration: none;
-  color: rgba(0,0,0,0.65);
-}
-
-.nav a:hover {
-  color: rgba(0,0,0,0.9);
-}
-
-/* ===== Header (force override) ===== */
-
-.site-header {
   border-bottom: 1px solid rgba(0,0,0,0.12) !important;
   background: #fff !important;
 }
