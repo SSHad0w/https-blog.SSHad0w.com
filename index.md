@@ -42,7 +42,8 @@ title: Log Files
 
             {% if post.tags %}
               {% for t in post.tags %}
-                <span class="dossier-chip dossier-chip-tag">{{ t }}</span>
+                <a class="dossier-chip dossier-chip-tag" href="{{ '/tags/#' | append: t | slugify | relative_url }}">{{ t }}</a>
+
               {% endfor %}
             {% endif %}
           </div>
