@@ -122,16 +122,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-/* Sticky header */
-
-.site-header {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 1000 !important;
-  backdrop-filter: blur(10px) !important;
-  background: rgba(255,255,255,0.9) !important;
-}
-
 /* Footer */
 
 .site-footer {
