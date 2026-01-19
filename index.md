@@ -7,7 +7,7 @@ title: Log Files
   <div class="home-head">
     <h1 class="home-title">{{ site.title }}</h1>
     <p class="home-sub">
-      Notes, writeups, and system autopsies.
+      Always ask better questions
     </p>
   </div>
 
