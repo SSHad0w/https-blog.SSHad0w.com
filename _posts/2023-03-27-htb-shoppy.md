@@ -1,5 +1,5 @@
 ---
-title: "HTB: Shoppy"
+title: "Htb Shoppy"
 date: 2023-03-27
 categories: ['htb', 'writeups']
 ---
