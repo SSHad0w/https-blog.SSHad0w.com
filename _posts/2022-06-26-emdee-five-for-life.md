@@ -4,8 +4,6 @@ permalink: /htb-emdee-five-for-life/
 date: 2022-06-26
 categories: ['htb', 'writeups']
 ---
-Emdee Five for life (Blog)
-
 Hello hackers! Today we'll cover a quick and fun scripting challenge python. This is the first Challenge on the Intro to Dante track on Hack The Box which is described as:
 "Practice machines and challenges to help you prepare for the Dante Pro Lab."
 
