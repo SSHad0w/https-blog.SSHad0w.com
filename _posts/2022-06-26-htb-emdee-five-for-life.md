@@ -1,6 +1,5 @@
 ---
 title: "HTB: Emdee Five For Life"
-permalink: /htb-emdee-five-for-life/
 date: 2022-06-26
 categories: ['htb', 'writeups']
 ---
