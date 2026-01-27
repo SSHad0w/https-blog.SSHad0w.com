@@ -1,10 +1,8 @@
 ---
-title: "Htb Shoppy"
+title: "HTB: Shoppy"
 date: 2023-03-27
 categories: ['htb', 'writeups']
 ---
-Shoppy (Blog)
-
 This post is a part of my Machine Monday challenge series.
 Each monday I'll post a writeup on a new machine that I've recently exploited. Click here to learn about how the challenge works, or tell me what I should study next!
 
@@ -710,3 +708,4 @@ Before we run it, let's see what it actually does:
 ![3a658fbd73d98533001aa47a8c60b9d7.png](/assets/img/htb-shoppy/2f472c515461470da557da5f4f679cc3.png)
 
 It worked! I'm so glad I wasn't afraid to ask for help.
+
