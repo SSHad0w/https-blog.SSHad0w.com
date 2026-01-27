@@ -3,8 +3,6 @@ title: "HTB: Heist"
 date: 2024-07-05
 categories: ['htb', 'writeups']
 ---
-Heist (Blog)
-
 ![416bc4cbf426f435082ec4ec9b7cb27a.png](/assets/img/htb-heist/1b5f0802a19c451fa1c381cb9da699a5.png)
 
 ## /etc/hosts
@@ -581,3 +579,4 @@ We can acheive the root flag by using
 ![1716daa1d2a69c225df49a2dddf78c36.png](/assets/img/htb-heist/de1db95469a1431c95a74f96a199966f.png)
 
 ![ea4a9236d5a1d24c891ff48dd06f2873.png](/assets/img/htb-heist/9fa290dd12c14b2b8ff380f37ff713a6.png)
+
