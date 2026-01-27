@@ -1,10 +1,8 @@
 ---
-title: "Emdee Five For Life"
+title: "HTB: Emdee Five For Life"
 date: 2022-06-26
 categories: ['htb', 'writeups']
 ---
-Emdee Five for life (Blog)
-
 Hello hackers! Today we'll cover a quick and fun scripting challenge python. This is the first Challenge on the Intro to Dante track on Hack The Box which is described as:
 "Practice machines and challenges to help you prepare for the Dante Pro Lab."
 
@@ -301,9 +299,6 @@ d185f72466f92c697b6c9ed3ca496ebe
 
 ## Lessons learned
 It's times like this that remind me that [it's okay to use writeups](https://www.hackthebox.com/blog/It-is-Okay-to-Use-Writeups), even [the best people in the field do it to learn!](https://www.linkedin.com/posts/ippsec_it-is-okay-to-use-writeups-activity-7072539730092941312-VNtm?utm_source=share&utm_medium=member_desktop). If I hadn't have stopped and read a writeup, I wouldn't have understood why I needed to use `requests.session()`, and I wouldn't have been able to progress. It's easy to get frustrated while learning new things, but there's no point in staying frustrated if you're stuck.
-
-Thanks for reading! Be sure to come back to read my writeup on "Heist"!
-
 
 Thanks for reading! Be sure to come back to read my writeup on "Heist"!
 
