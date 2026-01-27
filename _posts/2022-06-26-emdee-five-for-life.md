@@ -2,6 +2,7 @@
 title: "Emdee Five For Life"
 date: 2022-06-26
 categories: ['htb', 'writeups']
+published: false
 ---
 Emdee Five for life (Blog)
 
