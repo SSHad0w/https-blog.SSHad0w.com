@@ -1,8 +1,10 @@
 ---
-title: "HTB: Shoppy"
+title: "Htb Shoppy"
 date: 2023-03-27
 categories: ['htb', 'writeups']
 ---
+Shoppy (Blog)
+
 This post is a part of my Machine Monday challenge series.
 Each monday I'll post a writeup on a new machine that I've recently exploited. Click here to learn about how the challenge works, or tell me what I should study next!
 
